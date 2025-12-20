@@ -11,7 +11,7 @@ section: project
 
       <h1 class="grid__item--span-4 mw--readable">{{ title }}</h1>
       <div class="grid__item--span-4 mw--readable markdown">{{ description | renderUsingMarkdown | safe }}</div>
-        
+
       {% if year and settings.theme.theme_features.show_project_year %}
         <p class="grid__item--span-4 mw--readable mb--0">
           {{ year }}
@@ -23,6 +23,30 @@ section: project
   </header>
 
   <section class="grid grid--project pb--3">
+
+    {% if videos %}
+      {# Видео-блоки #}
+      {% for video in videos %}
+        <figure class="grid__item grid__item--breakout mb--4">
+          <div style="width: 100%; aspect-ratio: 16/9; background: #000;">
+            <video 
+              controls 
+              playsinline 
+              loop 
+              preload="metadata" 
+              poster="{{ video.src }}"
+              style="width: 100%; height: 100%; object-fit: contain; display: block;"
+            >
+              <source src="{{ video.url }}" type="video/mp4">
+              Ваш браузер не поддерживает тег видео.
+            </video>
+          </div>
+          {% if video.caption %}
+            <figcaption class="project__caption pt--1">{{ video.caption }}</figcaption>
+          {% endif %}
+        </figure>
+      {% endfor %}
+    {% endif %}
 
     {% if images %}
 
@@ -40,14 +64,14 @@ section: project
 
         {# Create an object for our main project image parameters which we can then
         destructure inside our shortcode function. See eleventy.js for what's going on #}
-        {% set params = 
+        {% set params =
           {
             "src": image.src,
             "alt": image.caption or title,
             "classes": "grid__item grid__item--breakout",
             "loadingType": "eager" if loop.first else "lazy",
             "viewportSizes": "(min-width: 1140px) 70vw, (min-width: 540px) 90vw, 100vw",
-            "outputWidths": [ 
+            "outputWidths": [
               settings.config.image_width_sm,
               settings.config.image_width_md,
               settings.config.image_width_lg
@@ -75,7 +99,7 @@ section: project
       </div>
     </div>
   </section>
-  
+
 </article>
 
 {# Output a list of random projects, excluding the current project, default limit of 48 #}
