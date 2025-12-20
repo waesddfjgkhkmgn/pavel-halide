@@ -49,7 +49,7 @@ theme:
   theme_colors:
     background: '#ffffff'
     text: '#101010'
-    link: '#542BFF'
+    link: '#2DCD55'
     background_dark: '#101010'
     text_dark: '#E1E1E1'
     link_dark: '#FFFFFF'
