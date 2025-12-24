@@ -34,8 +34,8 @@ metadata:
     On this site, I share my film photographs.
   site_email: seetoare@gmail.com
   site_social_url: 'https://t.me/wildproject_log'
-  site_icon_svg: ''
-  site_icon_png: /assets/uploads/avatar_panama_blur_04.png
+  site_icon_svg: /assets/uploads/avatar_panama_blur_04_SVG.svg
+  site_icon_png: ''
   site_ga4_id: G-CJ1HW1TV5T
   seo:
     site_title: Kondratov film photography
