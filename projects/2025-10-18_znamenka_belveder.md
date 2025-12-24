@@ -2,8 +2,7 @@
 draft: false
 title: Znamenka+Belveder
 description: |
-  2025-10-18 Осенняя прогулка
-year: 2025
+  Осенняя прогулка
 images:
   - src: >-
       /assets/uploads/2025-10-18_Znamenka_Belveder__Agfa_Aviphot_200_OUT/2025-10-18_Znamenka_Belveder_09.jpg
