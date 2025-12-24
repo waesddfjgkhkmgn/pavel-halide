@@ -38,10 +38,8 @@ metadata:
   site_icon_png: ''
   site_ga4_id: ''
   seo:
-    site_title: Halide - Jamstack portfolio theme
-    site_description: >-
-      A customizable, minimalist portfolio website designed for photographers
-      and still image creators.
+    site_title: ' Designer'
+    site_description: This site features a collection of film photographs
     no_index: false
 theme:
   theme_layout:
