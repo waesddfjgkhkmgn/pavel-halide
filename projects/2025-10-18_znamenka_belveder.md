@@ -21,7 +21,9 @@ images:
   - src: >-
       /assets/uploads/2025-10-18_Znamenka_Belveder__Agfa_Aviphot_200_OUT/2025-10-18_Znamenka_Belveder_06.jpg
     caption: '6'
-  - {}
+  - src: >-
+      /assets/uploads/2025-10-18_Znamenka_Belveder__Agfa_Aviphot_200_OUT/2025-10-18_Znamenka_Belveder_07.jpg
+    caption: '7'
   - {}
   - {}
   - {}
