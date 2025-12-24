@@ -2,7 +2,7 @@
 draft: false
 title: Znamenka+Belveder
 description: |
-  Осенняя прогулка 2025-10-18
+  Осенняя прогулка 18 октября
 year: 2025
 images:
   - src: >-
